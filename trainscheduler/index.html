@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Train Schedule</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="jumbotron">
+        <h1>Train Schedule</h1>
+    </div>
+    <!-- CURRENT TRAINS -->
+    <div class="container train-data">
+        <div class="card">
+            <div class="card-header">
+                <h5>Current Trains</h5>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Route</th>
+                            <th scope="col">Arriving</th>
+                            <th scope="col">Departure</th>
+                            <th scope="col">Ticket Rate ($)</th>
+                            <th scope="col">Total Billed ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="train-table" class="table-hover"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD TRAIN -->
+    <div class="container add-train" style="margin-top: 15px">
+        <div class="card">
+            <div class="card-header">
+                <h6>Add Train</h6>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="route">Route</label>
+                        <input type="text" class="form-control" id="route" placeholder="route" />
+                    </div>
+                    <div class="form-group">
+                        <label for="arriving">Arriving</label>
+                        <input type="text" class="form-control" id="arriving" placeholder="arriving" />
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Ticket Rate</label>
+                        <input type="text" class="form-control" id="rate" placeholder="rate" />
+                    </div>
+                    <button type="button" class="btn btn-success">Success</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/ff8d25dcae.js" crossorigin="anonymous"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+
+    <!-- JAVASCRIPT, JQUERY -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

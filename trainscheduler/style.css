@@ -1,0 +1,22 @@
+.jumbotron  {
+    width: 80%;
+    border-color: black;
+    margin-left: 10%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    -webkit-box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+}
+
+
+head { background-color:black;color:white;}
+
+body{font-size:12px;}
+
+.card {
+    -webkit-box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 15px -7px rgba(0,0,0,0.75);
+}
